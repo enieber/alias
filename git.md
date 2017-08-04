@@ -2,5 +2,5 @@
 
 ```
 alias glo='git log --decorate --graph --oneline --date-order'
-alias gcf='git checkout HEAD --'
+alias git-check-file='git checkout HEAD --'
 ```
