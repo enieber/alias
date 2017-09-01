@@ -6,4 +6,5 @@ alias rn-reload='adb shell input keyevent 82 && adb shell input keyevent 20 && a
 alias rn-start='react-native run-android'
 alias rn-log='react-native log-android'
 alias rn-release='react-native run-android --variant=release'
+alias rn-deb='adb reverse tcp:9090 tcp:9090'
 ```
