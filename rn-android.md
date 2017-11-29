@@ -9,4 +9,5 @@ alias rn-release='react-native run-android --variant=release'
 alias rn-deb='adb reverse tcp:9090 tcp:9090'
 alias ad-clean='cd android/ && ./gradlew --info clean && cd .. || cd .. '
 alias rn-server='react-native start'
+alias rn-apk='react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug'
 ```
