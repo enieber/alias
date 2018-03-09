@@ -8,4 +8,7 @@ alias rn-log='react-native log-android'
 alias rn-release='react-native run-android --variant=release -- --stacktrace'
 alias rn-deb='adb reverse tcp:9090 tcp:9090'
 alias ad-clean='cd android/ && ./gradlew --info clean && cd .. || cd .. '
+alias rn-clear='rm -rf android/app/build/'
 alias rn-server='react-native start'
+
+```
