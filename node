@@ -1,0 +1,1 @@
+alias npm="sudo docker run -v "$PWD":/usr/src/app -w /usr/src/app node:8 npm"
