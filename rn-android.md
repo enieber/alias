@@ -11,5 +11,6 @@ alias rn-deb='adb reverse tcp:9090 tcp:9090'
 alias ad-clean='cd android/ && ./gradlew --info clean && cd .. || cd .. '
 alias rn-clear='rm -rf android/app/build/'
 alias rn-server='react-native start'
-
+alias rn-assets='mkdir -p android/app/src/main/assets'
+alias rn-rm-img='rm -r android/app/src/main/res/drawable-mdpi/*.png && rm -r android/app/src/main/res/drawable-hdpi/*.png && rm -r android/app/src/main/res/drawable-xhdpi/*.png && rm -r android/app/src/main/res/drawable-xxhdpi/*.png && rm -r android/app/src/main/res/drawable-xxxhdpi/*.png'
 ```
