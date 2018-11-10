@@ -17,7 +17,8 @@
  alias ad-clean='cd android/ && ./gradlew --info clean && cd .. || cd .. '
  alias rn-clear='rm -rf android/app/build/'
  alias rn-server='react-native start'
- 
+ alias rn-sclear='sudo rm -rf $TMPDIR/react-* && sudo rm -rf node_modules/ && sudo npm cache verify && sudo npm install && sudo npm start -- --reset-cache'
+
 # Git
 
  alias glo='git log --decorate --graph --oneline --date-order'
