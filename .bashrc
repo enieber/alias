@@ -6,7 +6,7 @@
  alias phinx='docker run --rm -u "$UID" -v "$PWD:/app" eko3alpha/docker-phinx'
  
  # React Native to Android
- 
+ alias rn-js='react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/'
  alias rn-opt='adb shell input keyevent 82'
  alias rn-reload='adb shell input keyevent 82 && adb shell input keyevent 20 && adb shell input keyevent 66'
  alias rn-start='react-native run-android'
