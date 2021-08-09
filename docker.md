@@ -1,8 +1,14 @@
 # Alias to docker
 
 ```bash
+# remove all images of storage
 alias docker-rmi-all='docker rmi $(docker images -a -q)'
+
+# remove all contailners of storage
 alias docker-rm-all='docker rm $(docker ps -a -f status=exited -q)'
+
+# stop all containers
+alias docker-stop-all='docker stop $(docker ps -qa)'
 ```
 
 ## Run databases in dockers
