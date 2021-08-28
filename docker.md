@@ -18,3 +18,9 @@ alias docker-stop-all='docker stop $(docker ps -qa)'
 ```bash
 alias docker-pg='docker run --name db_postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres'
 ```
+
+### MongoDB Withoult Auth
+
+```bash
+alias docker-mg='docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb'
+```
