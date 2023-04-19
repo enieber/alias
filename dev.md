@@ -15,6 +15,14 @@
 
   ```sudo nix-collect-garbage --delete-older-than 30d```
   
+- remove containers dockers
+
+  ```docker rm -vf $(docker ps -aq)```
+  
+- remove images dockers
+
+  ```docker rmi -f $(docker images -aq)```
+  
 ## dev
 
 required:
