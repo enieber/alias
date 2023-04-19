@@ -1,4 +1,4 @@
-# Dev alias
+# alias to develop
 
 ## Mantainer
 
@@ -10,7 +10,12 @@
 
   ```find . -name 'target' -type d -prune```
   
-## Nextcloud
+- remove old collect nixos
+
+
+  ```sudo nix-collect-garbage --delete-older-than 30d```
+  
+## dev
 
 required:
 
@@ -18,7 +23,11 @@ required:
   - jq
 
 
+### log 
 
 - log 
 
   ```tail -f data/nextcloud.log |jq --indent 0 'del(.["reqId","level","remoteAddr","userAgent","version"])'```
+
+####
+
