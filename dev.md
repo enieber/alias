@@ -37,5 +37,7 @@ required:
 
   ```tail -f data/nextcloud.log |jq --indent 0 'del(.["reqId","level","remoteAddr","userAgent","version"])'```
 
-####
+### nextcloud dev docker
+
+```docker compose exec -u www-data nextcloud ./occ```
 
